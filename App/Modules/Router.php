@@ -70,14 +70,14 @@ class Router
 	{
 		Controller::sendJSONResponse([
 			"message" => "Not Found"
-		], 404); // Not Found
+		], 404); // Not found
 	}
 
 	public static function handleServerError()
 	{
 		Controller::sendJSONResponse([
 			"message" => "The specified function does not exist"
-		], 500); // Not Found
+		], 500); // Internal server error
 	}
 
 	/**
